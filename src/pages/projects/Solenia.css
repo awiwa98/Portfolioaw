@@ -1,10 +1,10 @@
 .soleniaContainer {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     align-items: flex-start;
-    padding-top: 8rem;
+    padding-top: 7rem;
 }
 
 

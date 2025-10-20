@@ -53,7 +53,7 @@ const Home = () => {
                     <div className="project" id="neu">
                         <div className="projectTextContainer">
                             <div className="projectText">
-                                <h3>Mental health app</h3>
+                                <h3>Mental health App</h3>
             
                                 <h4>Designing a Personalized AI‑Driven Mental Health App for Instant Relief and Emotional Awareness, Informed by User Insights</h4>
                                 <div className='projectUse'><p> UX/UI Design</p>
@@ -78,7 +78,7 @@ const Home = () => {
                     <div className="project" id="solenia">
                         <div className="projectTextContainer">
                             <div className="projectText">
-                                <h3>E-commerce platform</h3>
+                                <h3>E-commerce Platform</h3>
                     
                                 <h4>Worked in a team to design and build a responsive, interactive e-commerce platform.</h4>
                                 <div className='projectUse'>
@@ -103,7 +103,7 @@ const Home = () => {
                     <div className="project" id="todomate">
                         <div className="projectTextContainer">
                             <div className="projectText">
-                                <h3>Todo application</h3>
+                                <h3>Todo App</h3>
                                 <h4>Designed and built a responsive Todo App in React.</h4>
                                <div className='projectUse'>
                                <p>Web development</p>
