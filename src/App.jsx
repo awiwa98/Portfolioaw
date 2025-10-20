@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop'; // 🟢 Lägg till detta
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -28,6 +29,7 @@ const App = () => {
     <div className="appContainer">
       <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
       <div className="wrapper">
+        <ScrollToTop /> {/* 🟢 Lägg till detta precis här */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
