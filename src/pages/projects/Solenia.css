@@ -133,6 +133,6 @@
 /* 🟢 Nytt tillägg – gör bilder större på mobil */
 @media (max-width: 600px) {
   .wireframessolenia .imagesBox img {
-    width: 200px !important;
+    width: 300px !important;
   }
 }
