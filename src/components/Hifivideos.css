@@ -1,0 +1,57 @@
+/* --- MOBILE FIRST --- */
+.hifivideos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #000;
+  border-radius: 20px;
+  border: 2px solid var(--detail-color);
+}
+
+.video-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-wrapper h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Videorna */
+.video-player {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 12px;
+  object-fit: contain;
+  background-color: #000;
+  display: block;
+}
+
+/* --- DESKTOP --- */
+@media (min-width: 768px) {
+  .hifivideos-container {
+    flex-direction: row;       /* bredvid varandra */
+    flex-wrap: nowrap;         /* 👈 hindrar dem från att hamna på nästa rad */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: 1000px;
+  }
+
+  .video-wrapper {
+    flex: 1 1 0;
+    max-width: 220px;          /* 👈 styr hur smala de blir */
+  }
+
+  .video-player {
+    aspect-ratio: 9 / 16;
+  }
+}

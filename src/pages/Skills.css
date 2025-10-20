@@ -1,0 +1,186 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--background-color2);
+    padding-bottom: 1.5rem;
+    padding-top: 8rem;
+}
+
+
+.skills h2 {
+    font-weight: 550;
+    color: var(--detail-color);
+    font-size: 2rem;
+
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+  
+    padding-top: 0.5rem;
+}
+
+.education h3 {
+    
+    font-size: 1.2rem;
+    color: var(--detail-color);
+    
+}
+
+.education p {
+    padding-bottom: 0.4rem;
+
+}
+
+.chas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+   
+}
+
+.technologies {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+ 
+}
+
+.tech {
+    display: flex;
+    
+    flex-wrap: wrap;
+           
+    padding: 1.5rem;
+    width: 80%;
+    margin-top: 0.5rem;
+}
+
+.technologies h3 {
+   
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+   
+}
+
+.tech img {
+  
+    width: 75px;
+    height: 75px;
+    padding: 0.8rem;
+    animation: wave 1.5s infinite ease-in-out;
+    
+    }
+    
+    /* 🎨 Vågformad guppning */
+    @keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    }
+    
+    /* Tidsfördröjning för att skapa en vågform */
+    .technologies span:nth-child(1) img {
+    animation-delay: 0s;
+    }
+    
+    .technologies span:nth-child(2) img {
+    animation-delay: 0.1s;
+    }
+    
+    .technologies span:nth-child(3) img {
+    animation-delay: 0.2s;
+    }
+    
+    .technologies span:nth-child(4) img {
+    animation-delay: 0.3s;
+    }
+    
+    .technologies span:nth-child(5) img {
+    animation-delay: 0.4s;
+    }
+    
+    .technologies span:nth-child(6) img {
+    animation-delay: 0.5s;
+    }
+    
+
+    @media (min-width: 900px) { 
+
+        .skills {
+            
+            width: 85%;
+            margin: 0 auto;
+        }
+
+
+        /*
+        .skillsCategorys {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            justify-content: space-between;
+        }
+
+        .education {
+            width: 50%;
+        }
+
+        .technologies {
+            width: 50%;
+        } */
+
+        .skills h2 {
+            font-weight: 550;
+            font-size: 2.5rem;
+            padding-top: 0.3rem;
+            
+          
+        }
+        
+        
+        .education h3 {
+            font-size: 1.5rem;
+            font-weight: 550;
+           
+        }
+        
+        .technologies h3 {
+            font-size: 1.5rem;
+            font-weight: 550;
+         
+        }
+
+    
+
+        .technologies img {
+            width: 100px;
+            height: 100px;
+           
+        }
+
+        .tech {
+           
+            padding: 1.5rem;
+            width: 80%;
+            margin-top: 1rem;
+
+        }
+        
+        
+            }
+
+
+
+    

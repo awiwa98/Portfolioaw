@@ -1,0 +1,120 @@
+.neuContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding-top: 8rem;
+   
+}
+
+.headline h1 {
+    color: var(--detail-color);
+}
+
+
+.used {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 1rem;
+    padding-top: 1rem;
+    
+}
+
+.tool {
+    background-color: var(--background-color5);
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+}
+
+h3 {
+    color: var(--detail-color);
+    padding-top: 0.6rem;
+}
+
+
+
+.overview {
+    border-bottom: 2px solid var(--background-color2);
+    padding-top: 0.2rem;
+   
+
+}
+
+.user-research {
+    border-bottom: 2px solid var(--background-color2);
+    padding-top: 0.8rem;
+    
+}
+
+
+
+.user-research li{
+    padding-bottom: 0.8rem;
+    list-style-type: square;
+
+}
+
+
+
+.lofi-wireframe-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hifi-wireframe-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+
+
+@media (min-width: 768px) { 
+
+    
+.used {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem 1rem;
+    padding-top: 1rem;
+    
+}
+
+ 
+ }
+
+ @media (min-width: 900px) { 
+
+    .behavior-types { 
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    
+    .user-map img {
+ 
+        width: 500px;
+        border-radius: 8px;
+    }
+
+    .lofi-wireframe-title {
+        text-align: center;
+        width: 100%;
+       
+    }
+
+    .hifi-wireframe-title {
+        text-align: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+
+
+  
+    
+ 
+    
+
+}

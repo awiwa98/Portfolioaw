@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  padding-top: 8rem;
+  background-color: var(--background-color);
+
+  width: 90%;
+  margin: 0 auto;
+  color: var(--text-color);
+
+}
+
+.home-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+  
+
+.home h1{
+  font-weight: 550;
+  font-size: 2rem;
+ animation: slideInFromTop 0.5s ease-out forwards; 
+}
+
+.home h2 {
+  font-weight: 550;
+  font-size: 1.5rem;
+  animation: slideInFromTop 0.5s ease-out forwards; 
+}
+
+.highlight {
+  color: var(--detail-color);
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(30px); /* Startar lite under */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.homeContactContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  
+  /* Animationen för att komma in från botten */
+  animation: slideInFromBottom 1s ease-out forwards;
+  animation-delay: 0.1s; /* Fördröjning så att den kommer efter h1 och h2 */
+}
+
+
+.contactButton {
+  padding: 8px 20px;
+  border: 2px solid var(--detail-color);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  width: 120px;
+  font-size: 15px;
+  height: 35px;
+  transition: .3s;
+  z-index: 1;
+  color: var(--detail-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contactButton::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--detail-color);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.contactButton:hover::before {
+  width: 105%;
+}
+
+.contactButton:hover {
+  color: var(--text-color2);
+}
+
+.contactIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contactIcons i {
+  font-size: 1.8rem;
+  color: var(--detail-color);
+  transition: color 0.3s, transform 0.2s;
+}
+
+.contactIcons i:hover {
+  transform: scale(1.2);
+}
+
+.projectHeading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 2rem;
+  color: var(--detail-color);
+
+}
+
+.projectHeading h2 {
+ font-size: 1.5rem;
+ 
+}
+
+
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--background-color);
+}
+
+/* Förbättrad struktur för projektkort */
+.project {
+  width: 350px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 1.5rem ;
+}
+
+@keyframes scaleEffect {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
+@keyframes scaleBack {
+  0% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.project:hover {
+  animation: scaleEffect 0.3s ease-in-out forwards;
+}
+
+.project {
+  animation: scaleBack 0.3s ease-in-out;
+}
+
+/* Se till att text och knapp har en konsekvent placering */
+.projectTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ 
+  text-align: start;
+  flex-grow: 0.4; /* Fyll ut utrymmet mellan bild och knapp */
+  width: 100%;
+  min-height: 100px; /* Ser till att alla kort har samma höjd */
+  
+}
+
+.projectText h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.projectText h4 {
+  font-size: 1rem;
+  font-weight: 550;
+  color: var(--text-color);
+ 
+}
+
+
+.projectUse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.projectUse p {
+  background-color: var(--background-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  
+}
+
+
+/* Håller bild och knapp på en jämn nivå */
+.projectImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.projectImg img {
+  width: 280px;
+  height: auto;
+}
+
+.projectBtnWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto; /* Håller knappen längst ner */
+}
+
+/* Knappstil för projekt */
+.projectButton {
+  padding: 8px 20px;
+  border: 2px solid var(--detail-color);
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  width: 155px;
+  font-size: 15px;
+  height: 45px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: var(--detail-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.projectButton::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--detail-color);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.projectButton:hover::before {
+  width: 105%;
+}
+
+.projectButton:hover {
+  color: var(--text-color2);
+}
+
+/* Specifikt för projektet 'neu' */
+#neu .projectImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem; /* lite mellanrum mellan bilderna */
+  flex-wrap: wrap; /* gör att de kan brytas till flera rader vid behov */
+}
+
+#neu .projectImg img {
+  width: 80px; /* gör bilderna mindre */
+  height: auto;
+  
+}
+
+
+/* Anpassningar för större skärmar */
+@media (min-width: 768px) {
+  .home {
+      padding-top: 10rem;
+      background-color: var(--background-color);
+      width: 85%;
+  }
+
+  .home h1 {
+      font-weight: 550;
+      font-size: 3rem;
+      
+  }
+
+  .home h2 {
+      font-weight: 550;
+      font-size: 2.5rem;
+      padding-top: 0.3rem;
+      width: 80%;
+      
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .home {
+    padding-top: 8rem;
+    background-color: var(--background-color);
+    width: 100%;
+    margin: 0 auto;
+    color: var(--text-color);
+ 
+  }
+  
+  .home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .homeContactContainer {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+  }
+
+  .projectHeading h2 {
+    font-size: 2rem;
+    
+   }
+
+ 
+  .projectContainer {
+      gap: 2rem;
+  }
+
+  .project {
+      width: 520px;
+      height: 490px;
+     
+    
+  }
+
+  .projectTextContainer {
+      min-height: 110px; /* Justera vid behov */
+  }
+
+  .projectImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      padding-left: 1rem;
+      min-height: 100px;
+  }
+
+  .projectImg img {
+      width: 400px;
+      height: auto;
+      padding-top: 1.5rem;
+      margin-bottom: 2.5rem;
+  }
+
+  #neu .projectImg img {
+  width: 110px; /* gör bilderna mindre */
+  height: auto;
+  
+}
+  
+
+
+}

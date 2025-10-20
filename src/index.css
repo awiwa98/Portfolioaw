@@ -1,0 +1,80 @@
+/* index.css */
+
+/* Standard (ljusläge) */
+:root {
+  --background-color: #F9F4F2;
+  --background-color2: #f5ece9;
+  --background-color3: rgba(0, 0, 0, 0.15);
+  --background-color4: #fafafa;
+  --background-color5: #f5ece9;
+
+
+  --text-color: #383838;
+  --text-color2: #FFFDFA;
+  --text-color3: #6b6b6b;
+  --text-white: #FFFDFA;
+  --detail-color: #18c3a9; 
+  --detail-color2:  #555555; 
+
+  --text-shadow:  0 0 8px #811af0, 0 0 15px #811af0, 0 0 20px #811af0;
+  
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  --box-shadow2: 0 1px 3px rgba(0, 0, 0, 0.3); 
+
+
+
+
+}
+
+/* Mörkerläge */
+body.dark-theme {
+  --background-color: #020D16;
+  --background-color2: #03121f;
+  --background-color3: rgba(255, 255, 255, 0.15);
+  --background-color4: #0b1117;
+  --background-color5: #04192c;
+
+  --text-color: #cececd;
+  --text-color2: #020D16;
+  --text-color3: #a0a0a0;
+   --text-white: #FFFDFA;
+  --detail-color: #0CF2FF; 
+  --detail-color2:  #888888; 
+
+  --text-shadow:   0 0 8px #0CF2FF, 0 0 15px #0CF2FF, 0 0 20px #0CF2FF;
+
+  --box-shadow: 0 0 4px 1px #0CF2FF;
+  --box-shadow2: 0 1px 3px rgba(57, 55, 55, 0.3);
+
+
+}
+
+/*
+--box-shadow: 0 0 6px 1px #0CF2FF;
+  --box-shadow: 0 4px 8px rgba(12, 7, 43, 0.2);
+*/
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Andra globala stilar */
+}
+
+.appContainer {
+  width: 100%;
+}
+
+
+
+
+
+
+
+  
+
+  

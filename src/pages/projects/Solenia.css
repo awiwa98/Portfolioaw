@@ -1,0 +1,151 @@
+.soleniaContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding-top: 8rem;
+}
+
+
+
+
+.headline h1 {
+    color: var(--detail-color);
+}
+
+.tools  {
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+}
+
+.text {
+    padding-top: 1rem;
+}
+
+.text p {
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.wireframeWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wireframe-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    
+}
+
+
+.wireframe-text  {
+    text-align: start;
+   
+
+}
+
+
+.wireframessolenia {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.wireframessolenia  {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 0.5rem;
+}
+
+.imagesBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.imagesBox img{
+    width: 95px;
+
+}
+
+
+.projectLinks {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.projectLinksButton {
+    padding: 10px 20px;
+    border: 2px solid var(--detail-color);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    width: 130px;
+    font-size: 15px;
+    height: 40px;
+    transition: .3s;
+    z-index: 1;
+    color: var(--detail-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.projectLinksButton::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: var(--detail-color);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.projectLinksButton:hover::before {
+    width: 105%;
+}
+
+.projectLinksButton:hover {
+    color: var(--text-color2);
+}
+
+.projectLinksButton a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) { 
+
+    .wireframessolenia img {
+        width: 450px;
+    }
+
+
+}
+
+@media (min-width: 900px) { 
+
+    
+
+
+
+    .imagesBox img {
+        width: 170px;
+    }
+
+}
+

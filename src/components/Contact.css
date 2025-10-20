@@ -1,0 +1,175 @@
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-bottom: 2px solid var(--background-color2);
+}
+
+#Contact {
+  margin: 0;
+  padding: 0;
+}
+
+
+.contact h2 {
+  font-weight: 550;
+  color: var(--detail-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+
+}
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-field, .textarea-field {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--detail-color2);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .input-field:focus, .textarea-field:focus {
+    border-color: var(--detail-color);
+    outline: none;
+  }
+  
+  .textarea-field {
+    resize: vertical;
+    height: 150px;
+   
+  }
+  
+  .submit-button {
+    padding: 8px 20px;
+    border: 2px solid var(--detail-color);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 15px;
+    height: 35px;
+    transition: .3s;
+    z-index: 1;
+    color: var(--detail-color);
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .submit-button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: var(--detail-color);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+  
+  .submit-button:hover::before {
+    width: 105%;
+  }
+  
+  .submit-button:hover {
+    color: var(--text-color2);
+  }
+  
+  .error {
+    color: var(--detail-color);
+    font-size: 12px;
+   
+  }
+/* Modal styling */
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 300px; /* Specific width for the modal */
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+    opacity: 0; /* Hide initially with opacity */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .modal.show {
+    display: block; /* Display the modal */
+    opacity: 1; /* Fade in the modal */
+  }
+  
+  .modal.success {
+    border: 2px solid var(--detail-color);
+    border-radius: 8px;
+    background-color: var(--background-color); /* Light green background */
+  }
+  
+  .modal.error {
+    border: 2px solid rgb(222, 124, 124);
+    border-radius: 8px;
+    background-color: var(--background-color); /* Light red background */
+  }
+  
+  .modal p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .modal-close-button  {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--detail-color);
+    color: var(--text-color2);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .modal-close-button:hover {
+    color: var(--text-color2);
+  }
+  
+  
+
+@media (min-width: 900px) { 
+
+    .contact {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .contact h2 {
+        font-weight: 550;
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+      }
+
+}

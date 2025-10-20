@@ -1,0 +1,311 @@
+.about {
+    width: 90%;
+    margin: 0 auto;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    border-top: 2px solid var(--background-color2);
+    padding-top: 8rem;
+   
+   }
+
+   /*   background-color: var(--background-color2);
+    padding: 2rem 2rem 3rem 2rem;
+     border-radius: 10px; */
+
+.about h2 {
+    font-weight: 550;
+    color: var(--detail-color);
+    font-size: 1.5rem;
+}
+
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-intro-text h4 {
+    font-size: 1.2rem;
+    color: var(--detail-color);
+}
+
+.profile-img img{
+
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.about-cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.4rem;
+}
+
+.about-cats img{
+    width: 120px;
+    border-radius: 10px;
+
+}
+
+.about-card-title h3 {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+   
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--background-color2);
+    
+}
+
+
+.about-card {
+
+    background-color: var(--background-color5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+  
+    width: 300px;
+   
+}
+
+.about-card i {
+   
+    margin-right: 0.3rem;
+}
+
+.about-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+
+
+.about p {
+    padding-bottom: 0.4rem;
+
+}
+
+
+.aboutImg img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 1.5rem;
+}
+
+.progress-steps-title h3{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+   
+}
+
+.progress-desktop {
+    display: none;
+    
+  }
+  
+  .progress-mobile {
+    display: block;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--background-color2);
+    
+  
+  }
+
+  .work-philosophy-title h3 {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    
+  }
+
+  .work-philosophy-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--background-color2);
+  }
+
+  .work-philosophy-card {
+    background-color: var(--background-color5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+  
+    width: 300px;
+
+  }
+  
+
+
+@media (min-width: 900px) { 
+
+    .about-intro {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+
+    .about-intro-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 71%;
+      
+       
+    }
+
+    .profile-img {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .profile-img img {
+    
+        width: 260px;
+    
+        height: auto;
+       
+    }
+
+    .about-cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.about-cats img{
+    width: 150px;
+    border-radius: 10px;
+
+}
+
+    .progress-desktop {
+        display: block;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid var(--background-color2);
+      }
+    
+      .progress-mobile {
+        display: none;
+      }
+    
+    
+
+.about {
+    width: 85%;
+    margin: 0 auto;
+    
+    
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
+    
+}
+
+.about-card {
+    width: 350px;
+    background-color: var(--background-color5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    
+}
+
+.about-intro-text h4 {
+    font-size: 1.5rem;
+}
+
+.aboutText h2 {
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 0.3rem;
+    text-align: start;
+}
+
+.aboutText h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.aboutText p {
+    font-size: 1rem;
+}
+
+.work-philosophy-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
+
+}
+
+.work-philosophy-card {
+    width: 350px;
+    background-color: var(--background-color5);
+    padding: 1.5rem;
+    border-radius: 10px;
+
+}
+
+
+
+
+}
+
+
+@media (min-width: 1200px) { 
+
+    .about-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 1.5rem;
+ }
+
+ .work-philosophy-cards {
+    flex-wrap: nowrap;
+ }
+
+}

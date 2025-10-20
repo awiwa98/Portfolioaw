@@ -1,0 +1,77 @@
+.process-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .steps-line-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 90%;
+    
+  }
+  
+  .step-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-start;
+  }
+  
+  .step-row::after {
+    content: "";
+    position: absolute;
+    top: 20px; /* höjden på cirkeln */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--detail-color);
+    z-index: 1;
+  }
+  
+  .step {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Ändrat här till left för att vänsterjustera texten */
+  }
+  
+  .step-top {
+    z-index: 2;
+    position: relative;
+
+  }
+  
+  .step-circle {
+    width: 35px;
+    height: 35px;
+    background-color: var(--detail-color);
+    color: var(--text-color2);
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 2;
+    position: relative;
+  }
+  
+  .step-bottom {
+    margin-top: 10px;
+    text-align: left; /* Vänsterjustera texten här också */
+    width: 100%; /* Se till att texten inte får för mycket utrymme */
+  }
+  
+  .step-title {
+    font-weight: 600;
+  }
+
+  .step-subtitle {
+    font-size: 0.9rem;
+  }
+
+  

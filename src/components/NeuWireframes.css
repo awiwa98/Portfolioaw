@@ -1,0 +1,85 @@
+.lofi-wireframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  
+   
+  }
+
+  .see-more-button {
+    
+    color: var(--detail-color);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .see-more-button:hover {
+    text-decoration: underline;
+  }
+
+  .flow-title {
+    margin-bottom: 1rem;
+  }
+  
+
+  
+  .flow-images {
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .lofi-wireframe-flow img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* New class to ensure the button behaves the way we want */
+  .toggle-button-container {
+    display: flex;
+    margin-top: 1rem;
+   justify-content: center;
+  }
+  
+  @media (min-width: 900px) {
+    .lofi-wireframe {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      width: 90%;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+  
+    .flow-images {
+      justify-content: flex-start;
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    /* Optional: You can adjust the positioning of the button for larger screens */
+    .toggle-button-container {
+      display: flex;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      justify-content: center;
+      width: 100%; 
+    }
+  }
+  
+
+
