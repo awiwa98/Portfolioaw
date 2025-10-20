@@ -8,7 +8,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Neu from './pages/projects/Neu';
 import Solenia from './pages/projects/Solenia';
-import Todomate from './pages/Projects/Todomate';
+import Todomate from './pages/projects/Todomate';
 
 import './index.css';
 
