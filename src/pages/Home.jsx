@@ -62,9 +62,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="projectImg">
-                            <img src="images/mockupneu.png" alt="Project 2" />
-                             <img src="images/mockupneu1.png" alt="Project 2" />
-                             <img src="images/mockupneu3.png" alt="Project 2" />
+                            <img src="images/mockupneu.png" alt="neu mockup1" />
+                             <img src="images/mockupneu1.png" alt="neu mockup2" />
+                             <img src="images/mockupneu3.png" alt="neu mockup3" />
                         </div>
 
                         <div className="projectBtnWrapper">
@@ -89,7 +89,7 @@ const Home = () => {
                         </div>
 
                         <div className="projectImg">
-                            <img src="images/mockupsoleniaresp.png" alt="Solenia" />
+                            <img src="images/mockupsoleniaresp.png" alt="Solenia mockup" />
                         </div>
 
                         <div className="projectBtnWrapper">
@@ -112,7 +112,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="projectImg">
-                            <img src="images/todoportfolio1.png" alt="TodoMate" />
+                            <img src="images/todoportfolio1.png" alt="TodoMate mockup" />
                         </div>
 
                         <div className="projectBtnWrapper">

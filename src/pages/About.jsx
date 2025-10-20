@@ -41,8 +41,8 @@ const About = () => {
         </div>
 
           <div className="about-cats">
-             <img src="images/gjördisp1.jpg" alt="profile image" />
-             <img src="images/bamsep1.jpg" alt="profile image" />
+             <img src="images/gjördisp1.jpg" alt="grey cat" />
+             <img src="images/bamsep1.jpg" alt="brown cat" />
 
           </div>
 

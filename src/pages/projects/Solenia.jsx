@@ -63,17 +63,17 @@ const Solenia = () => {
             </div>
             <div className="wireframessolenia">
                 <div className="imagesBox">
-                    <img src="/images/landingpage.png" alt="" />
+                    <img src="/images/landingpage.png" alt="landingpage mid fi" />
                 </div>
 
                 <div className="imagesBox">
                     <img src="/images/Produktlista.png" alt="" />
-                    <img src="/images/Produktbeskrivning.png" alt="" />
+                    <img src="/images/Produktbeskrivning.png" alt="productlist mid fi" />
                 </div>
 
                 <div className="imagesBox">
-                    <img src="/images/Navbarfooter.png" alt="" />
-                    <img src="/images/Shoppingcart.png" alt="" />
+                    <img src="/images/Navbarfooter.png" alt="navbar/footer mid fi" />
+                    <img src="/images/Shoppingcart.png" alt="shoppingcart mid fi" />
                    
                 </div>
             </div>
@@ -85,17 +85,17 @@ const Solenia = () => {
             </div>
             <div className="wireframessolenia">
                 <div className="imagesBox">
-                    <img src="/images/landingpagehifi.png" alt="" />
+                    <img src="/images/landingpagehifi.png" alt="landingpage hifi" />
                 </div>
 
                 <div className="imagesBox">
                     <img src="/images/produktsoleniahi.png" alt="" />
-                    <img src="/images/produktbeskrivninghifi.png" alt="" />
+                    <img src="/images/produktbeskrivninghifi.png" alt="productlist hifi" />
                 </div>
 
                 <div className="imagesBox">
-                    <img src="/images/favoriteshi.png" alt="" />
-                    <img src="/images/shoppincarthi.png" alt="" />
+                    <img src="/images/favoriteshi.png" alt="favourites hifi" />
+                    <img src="/images/shoppincarthi.png" alt="shoppingcart hifi" />
                    
                 </div>
             </div>
