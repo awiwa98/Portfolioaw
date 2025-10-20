@@ -88,7 +88,7 @@
   text-transform: uppercase;
   width: 120px;
   font-size: 15px;
-  height: 35px;
+  height: 36px;
   transition: .3s;
   z-index: 1;
   color: var(--detail-color);
