@@ -65,12 +65,12 @@
 
 .homeContactContainer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
   width: 90%;
   margin: 0 auto;
   margin-top: 1.5rem;
-  
   /* Animationen för att komma in från botten */
   animation: slideInFromBottom 1s ease-out forwards;
   animation-delay: 0.1s; /* Fördröjning så att den kommer efter h1 och h2 */
@@ -128,7 +128,7 @@
 }
 
 .contactIcons i {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--detail-color);
   transition: color 0.3s, transform 0.2s;
 }
