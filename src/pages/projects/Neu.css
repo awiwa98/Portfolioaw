@@ -1,7 +1,7 @@
 .neuContainer {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     align-items: flex-start;
     padding-top: 7rem;
@@ -52,7 +52,7 @@ h3 {
 .user-research li{
     padding-bottom: 0.8rem;
     list-style-type: square;
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
 
 }
 

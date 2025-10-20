@@ -2,7 +2,7 @@
 .todoMateContainer {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     align-items: flex-start;
     padding-top: 7rem;
@@ -39,7 +39,7 @@
 .text li {
     padding-bottom: 1rem;
     list-style-type: square;
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
     
 }
 

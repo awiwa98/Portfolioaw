@@ -1,14 +1,11 @@
 .soleniaContainer {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     align-items: flex-start;
     padding-top: 7rem;
 }
-
-
-
 
 .headline h1 {
     color: var(--detail-color);
@@ -38,16 +35,11 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    
 }
-
 
 .wireframe-text  {
     text-align: start;
-   
-
 }
-
 
 .wireframessolenia {
     margin-bottom: 2rem;
@@ -68,11 +60,9 @@
     gap: 0.5rem;
 }
 
-.imagesBox img{
-    width: 95px;
-
+.imagesBox img {
+    width: 130px;
 }
-
 
 .projectLinks {
     display: flex;
@@ -129,23 +119,20 @@
 }
 
 @media (min-width: 768px) { 
-
     .wireframessolenia img {
         width: 450px;
     }
-
-
 }
 
 @media (min-width: 900px) { 
-
-    
-
-
-
     .imagesBox img {
         width: 170px;
     }
-
 }
 
+/* 🟢 Nytt tillägg – gör bilder större på mobil */
+@media (max-width: 600px) {
+  .wireframessolenia .imagesBox img {
+    width: 200px !important;
+  }
+}
