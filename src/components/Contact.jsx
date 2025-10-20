@@ -16,18 +16,16 @@ const Contact = () => {
     message: "",
   });
 
-  // State för modal
   const [modal, setModal] = useState({
     show: false,
     message: "",
-    type: "", // 'success' eller 'error'
+    type: "", 
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Rensa felet när användaren börjar skriva
     if (value !== "") {
       setErrors({ ...errors, [name]: "" });
     }
@@ -57,12 +55,12 @@ const Contact = () => {
 
     setErrors(errors);
 
-    // Skicka meddelandet om validering är okej
+  
     if (formIsValid) {
       emailjs
         .send(
-          "service_e2qnii9",  // Ersätt med ditt Service ID från EmailJS
-          "template_8rjmuf9",  // Ersätt med ditt Template ID från EmailJS
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,  
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID, 
           {
             from_name: formData.name,
             from_email: formData.email,
@@ -70,7 +68,7 @@ const Contact = () => {
             subject: formData.subject,
             reply_to: formData.email,
           },
-          "360NNA5urJWy1WLkY"  // Ersätt med din Public Key från EmailJS
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY   
         )
         .then(() => {
           setModal({
@@ -80,7 +78,7 @@ const Contact = () => {
           });
           setFormData({ name: "", email: "", message: "", subject: "" });
 
-          // Stäng modalen efter 3 sekunder
+         
           setTimeout(() => setModal({ ...modal, show: false }), 3000);
         })
         .catch((error) => {
@@ -143,7 +141,6 @@ const Contact = () => {
         <button type="submit" className="submit-button">Submit</button>
       </form>
 
-      {/* Modal (Popup) */}
       {modal.show && (
       <div className={`modal ${modal.show ? 'show' : ''} ${modal.type || ''}`}>
       <p>{modal.message}</p>
@@ -161,3 +158,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
