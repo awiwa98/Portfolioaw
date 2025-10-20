@@ -165,7 +165,7 @@
 /* Förbättrad struktur för projektkort */
 .project {
   width: 350px;
-  height: 480px;
+  height: 490px;
   display: flex;
   flex-direction: column;
   justify-content: center;
