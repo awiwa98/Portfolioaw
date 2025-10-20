@@ -8,7 +8,7 @@
   padding-top: 8rem;
   background-color: var(--background-color);
 
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   color: var(--text-color);
 
@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -164,8 +164,8 @@
 
 /* Förbättrad struktur för projektkort */
 .project {
-  width: 350px;
-  height: 490px;
+  width: 365px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,7 +264,7 @@
 }
 
 .projectImg img {
-  width: 280px;
+  width: 320px;
   height: auto;
 }
 
@@ -328,7 +328,7 @@
 }
 
 #neu .projectImg img {
-  width: 80px; /* gör bilderna mindre */
+  width: 100px; /* gör bilderna mindre */
   height: auto;
   
 }

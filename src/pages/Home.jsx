@@ -55,7 +55,7 @@ const Home = () => {
                             <div className="projectText">
                                 <h3>Mental health App</h3>
             
-                                <h4>Designing a Personalized AI‑Driven Mental Health App for Instant Relief and Emotional Awareness, Informed by User Insights</h4>
+                                <h4>Designing a Personalized AI‑Driven Mental Health App for support and Emotional Awareness, Informed by User Insights</h4>
                                 <div className='projectUse'><p> UX/UI Design</p>
                                 <p>User research</p> 
                                 <p>Graphic profile</p> </div>
