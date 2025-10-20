@@ -142,8 +142,11 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  padding-top: 2rem;
+  margin-top: 1.5rem;
   color: var(--detail-color);
+  padding-top: 2rem;
+   
+
 
 }
 

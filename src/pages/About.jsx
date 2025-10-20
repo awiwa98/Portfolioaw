@@ -31,7 +31,7 @@ const About = () => {
               developing are key to how I grow as a designer.
             </p>
             <p>
-              When I'm not designing, you’ll probably find me outside in nature, at the gym, on a
+              When I'm not designing, you’ll probably find me outside in nature, on a
               yoga mat, or trying to get my cats to pay attention to me 😄.
             </p>
           </div>
