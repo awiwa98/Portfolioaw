@@ -176,3 +176,16 @@
       }
 
 }
+
+/* Gör att mobilen visar "hover-effekten" när man trycker */
+@media (hover: none) and (pointer: coarse) {
+  .submit-button:active::before {
+    width: 105%;
+  }
+
+  .submit-button:active {
+    color: var(--text-color2);
+    transform: scale(0.97);
+    transition: 0.1s;
+  }
+}
