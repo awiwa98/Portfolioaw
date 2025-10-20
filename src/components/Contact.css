@@ -47,6 +47,9 @@
   }
   
   .submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px 20px;
     border: 2px solid var(--detail-color);
     border-radius: 20px;
