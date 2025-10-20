@@ -39,6 +39,7 @@
 .text li {
     padding-bottom: 1rem;
     list-style-type: square;
+    margin-left: 0.5rem;
     
 }
 

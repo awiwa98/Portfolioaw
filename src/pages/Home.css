@@ -38,13 +38,13 @@
 
 .home h1{
   font-weight: 550;
-  font-size: 2rem;
+  font-size: 2.5rem;
  animation: slideInFromTop 0.5s ease-out forwards; 
 }
 
 .home h2 {
   font-weight: 550;
-  font-size: 1.5rem;
+  font-size: 2rem;
   animation: slideInFromTop 0.5s ease-out forwards; 
 }
 
@@ -145,7 +145,7 @@
 }
 
 .projectHeading h2 {
- font-size: 1.5rem;
+ font-size: 1.8rem;
  
 }
 
