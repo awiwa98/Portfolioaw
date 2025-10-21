@@ -1,6 +1,6 @@
 import "./Neu.css";
 import NeuWireframes from "../../components/NeuWireframes";
-import Hifivideos from "../../components/Hifivideos";
+
 
 
 
@@ -82,7 +82,7 @@ const Neu = () => {
                     <h3>Hi-Fi prototypes</h3>
             
             </div>
-            <Hifivideos />
+          
 
             
 
