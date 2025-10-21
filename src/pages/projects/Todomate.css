@@ -91,6 +91,15 @@
     gap: 0.5rem;
 }
 
+.imagesTodo {
+    display: flex;
+    align-items: center;
+}
+
+.imagesTodo img {
+    width: 280px;
+}
+
 .projectLinksButton {
     padding: 10px 20px;
     border: 2px solid var(--detail-color);
@@ -147,4 +156,8 @@
     .imagesBox img {
         width: 170px;
     }
+
+    .imagesTodo img {
+    width: 300px;
+}
 }

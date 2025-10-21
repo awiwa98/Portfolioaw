@@ -53,6 +53,14 @@ const Todomate = () => {
                 </p>
             </div>
 
+               <div className="imagesTodo">
+                    <img src="/images/todomockupphone.png" alt="mockup todoapp" />
+                
+                   
+                </div>
+
+            
+
             <div className="projectLinks">
                 <button
                     className="projectLinksButton"
