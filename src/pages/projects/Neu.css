@@ -5,20 +5,17 @@
     margin: 0 auto;
     align-items: flex-start;
     padding-top: 7rem;
-   
 }
 
 .headline h1 {
     color: var(--detail-color);
 }
 
-
 .used {
     display: flex;
     flex-direction: column;
     gap: 0.5rem 1rem;
     padding-top: 1rem;
-    
 }
 
 .tool {
@@ -30,121 +27,123 @@
 h3 {
     color: var(--detail-color);
     padding-top: 0.6rem;
-    
 }
 
-.hifi-wireframe-title {
-    text-align: center;
-    width: 100%;
-    font-size: 1rem;
-}
-
+.hifi-wireframe-title,
 .lofi-wireframe-title {
     text-align: center;
     width: 100%;
     font-size: 1rem;
+    margin-top: 1.5rem;
+    border-top: 2px solid var(--background-color2);
+    padding-top: 1.5rem;
 }
-
-
 
 .overview {
     border-bottom: 2px solid var(--background-color2);
     padding-top: 0.2rem;
-   
-
 }
 
-.user-research {
-   
-    
-}
-
-
-
-.user-research li{
+.user-research li {
     padding-bottom: 0.8rem;
     list-style-type: square;
     margin-left: 0.8rem;
-
 }
 
-
-
-.lofi-wireframe-title {
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 1.5rem;
-    border-top: 2px solid var(--background-color2);
-    padding-top: 1.5rem;
-        
-}
-
-.hifi-wireframe-title {
-    text-align: center;
-     margin-top: 1.5rem;
-     border-top: 2px solid var(--background-color2);
-     padding-top: 1.5rem;
-        
-  
-    
-}
-
-
-
-@media (min-width: 768px) { 
-
-    
-.used {
+.lofi-mockup {
     display: flex;
-    flex-direction: row;
-    gap: 0.5rem 1rem;
-    padding-top: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
     
 }
 
- 
- }
+.lofi-mockup img {
+    width: 120px;
 
- @media (min-width: 900px) { 
+}
 
-    .behavior-types { 
+/* --- Hi-Fi mockups --- */
+.hifi-mockup {
+    display: flex;
+    flex-direction: column; /* Gör så att titeln hamnar ovanför bilderna */
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.mockup-title h4 {
+    margin-bottom: 1rem;
+    color: var(--detail-color);
+    font-size: 1.2rem;
+}
+
+/* Bilder */
+.imagesNeu {
+    display: flex;
+    flex-wrap: wrap; /* Tillåter radbrytning på mobil */
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imagesNeu img {
+    width: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagesNeu img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Responsivitet --- */
+@media (min-width: 768px) {
+    .used {
+        flex-direction: row;
+        gap: 0.5rem 1rem;
+        padding-top: 1rem;
+    }
+
+    .mockup-title h4 {
+        font-size: 1.6rem;
+    }
+
+    .imagesNeu img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 900px) {
+    .behavior-types {
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
-    
     .user-map img {
- 
         width: 500px;
         border-radius: 8px;
     }
 
     .lofi-wireframe-title {
-        text-align: center;
-        width: 100%;
         font-size: 1.5rem;
-         border-top: 2px solid var(--background-color2);
-         padding-top: 1.5rem;
-        
-        
-       
     }
 
     .hifi-wireframe-title {
-        text-align: center;
-        width: 100%;
         font-size: 1.5rem;
-        border-top: 2px solid var(--background-color2);
-        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mockup-title h4 {
+        font-size: 1.5rem;
     }
 
-
-
-
-
-  
-    
- 
-    
-
+    .imagesNeu img {
+        width: 220px;
+    }
 }
+

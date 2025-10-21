@@ -44,6 +44,7 @@ const NeuWireframes = () => {
               <img src="/images/Checkinexpand.png" alt="checkin expand" />
               <img src="/images/Moodcalender.png" alt="mood calendar" />
               <img src="/images/Moodcalenderdata.png" alt="mood calendar data" />
+              <img src="/images/AIchat.png" alt="AI chat" />
              
             </div>
           </div>
