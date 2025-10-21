@@ -145,18 +145,10 @@
     text-decoration: none;
 }
 
-/* Responsive images */
-@media (min-width: 768px) {
-    .wireframestodomate img {
-        width: 450px;
-    }
-}
+
 
 @media (min-width: 900px) {
-    .imagesBox img {
-        width: 170px;
-    }
-
+  
     .imagesTodo img {
     width: 300px;
 }
