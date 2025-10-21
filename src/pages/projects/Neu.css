@@ -88,11 +88,11 @@ h3 {
     flex-wrap: wrap; /* Tillåter radbrytning på mobil */
     justify-content: center;
     gap: 1rem;
-    margin-left: 2.4rem;
+    margin-left: 3.5rem;
 }
 
 .imagesNeu img {
-    width: 150px;
+    width: 240px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
