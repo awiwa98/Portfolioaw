@@ -62,9 +62,9 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="projectImg">
-                            <img src="images/mockupneu.png" alt="neu mockup1" />
-                             <img src="images/mockupneu1.png" alt="neu mockup2" />
-                             <img src="images/mockupneu3.png" alt="neu mockup3" />
+                            <img src="images/neustart.png" alt="neu mockup1" />
+                             <img src="images/profil1.png" alt="neu mockup2" />
+                             <img src="images/moodtrackm2.png" alt="neu mockup3" />
                         </div>
 
                         <div className="projectBtnWrapper">

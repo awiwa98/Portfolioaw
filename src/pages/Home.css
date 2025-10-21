@@ -329,7 +329,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.2rem; /* lite mellanrum mellan bilderna */
+ 
   flex-wrap: wrap; /* gör att de kan brytas till flera rader vid behov */
 }
 
@@ -404,7 +404,7 @@
 
   .project {
       width: 520px;
-      height: 490px;
+      height: 500px;
      
     
   }
@@ -430,8 +430,9 @@
   }
 
   #neu .projectImg img {
-  width: 110px; /* gör bilderna mindre */
+  width: 130px; /* gör bilderna mindre */
   height: auto;
+  margin-top: 0.5rem;
   
 }
   
