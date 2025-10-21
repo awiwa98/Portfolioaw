@@ -1,57 +1,77 @@
-/* --- MOBILE FIRST --- */
-.hifivideos-container {
+/* --- Grundlayout --- */
+.hifivideos-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  padding: 0;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
-  padding: 1rem;
-  background-color: #000;
-  border-radius: 20px;
-  border: 2px solid var(--detail-color);
-}
-
-.video-wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-.video-wrapper h2 {
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  color: var(--text-white);
-  font-size: 1rem;
+  background: none;
   text-align: center;
 }
 
-/* Videorna */
-.video-player {
+/* --- Varje block (titel + video) --- */
+.video-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   width: 100%;
-  aspect-ratio: 9 / 16;
-  border-radius: 12px;
+}
+
+/* --- Titeln ovanför --- */
+.video-title h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* --- Videon (själva telefonen) --- */
+.video-phone {
+  width: 85vw;
+  max-width: 480px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 40px;
   object-fit: contain;
-  background-color: #000;
-  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* --- DESKTOP --- */
-@media (min-width: 768px) {
-  .hifivideos-container {
-    flex-direction: row;       /* bredvid varandra */
-    flex-wrap: nowrap;         /* 👈 hindrar dem från att hamna på nästa rad */
+/* --- Hovereffekt --- */
+.video-phone:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Desktop (2x2 grid) --- */
+@media (min-width: 900px) {
+  .hifivideos-column {
+    display: grid;                          /* byt från flex till grid */
+    grid-template-columns: repeat(2, 1fr);  /* 2 kolumner */
+    gap: 4rem 1rem;                         /* rad- och kolumngap */
     justify-content: center;
-    align-items: flex-start;
-    gap: 1.5rem;
-    max-width: 1000px;
+    align-items: center;
+    padding: 4rem 0;
   }
 
-  .video-wrapper {
-    flex: 1 1 0;
-    max-width: 220px;          /* 👈 styr hur smala de blir */
+  .video-block {
+    width: 100%;
   }
 
-  .video-player {
-    aspect-ratio: 9 / 16;
+  .video-phone {
+    max-width: 700px;
+  }
+
+  h4.video-title {
+    font-size: 1.4rem;
   }
 }
+

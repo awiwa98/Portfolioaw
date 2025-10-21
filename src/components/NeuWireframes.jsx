@@ -36,7 +36,7 @@ const NeuWireframes = () => {
         <>
           <div className="lofi-wireframe-flow">
             <div className="flow-title">
-              <h4>Profile/Checkin/Moodtrack/Saved</h4>
+              <h4>Profile/Checkin/Moodtrack/</h4>
             </div>
             <div className="flow-images">
               <img src="/images/Profile.png" alt="profile" />
@@ -44,28 +44,18 @@ const NeuWireframes = () => {
               <img src="/images/Checkinexpand.png" alt="checkin expand" />
               <img src="/images/Moodcalender.png" alt="mood calendar" />
               <img src="/images/Moodcalenderdata.png" alt="mood calendar data" />
-              <img src="/images/Saved.png" alt="saved" />
+             
             </div>
           </div>
 
-          <div className="lofi-wireframe-flow">
-            <div className="flow-title">
-              <h4>Learn</h4>
-            </div>
-            <div className="flow-images">
-              <img src="/images/Explore.png" alt="explore" />
-              <img src="/images/Explore2.png" alt="explore" />
-              <img src="/images/Explore3.png" alt="explore" />
-            </div>
-          </div>
+       
 
           <div className="lofi-wireframe-flow" ref={lastFlowRef}>
             <div className="flow-title">
-              <h4>AI Chat/Community</h4>
+              <h4>AI Chat</h4>
             </div>
             <div className="flow-images">
               <img src="/images/AIchat.png" alt="AI chat" />
-              <img src="/images/Community.png" alt="community" />
             </div>
           </div>
         </>
