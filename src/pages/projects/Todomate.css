@@ -85,7 +85,7 @@
 .projectLinks {
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -151,5 +151,9 @@
   
     .imagesTodo img {
     width: 300px;
+}
+
+.projectLinks {
+    justify-content: flex-start;
 }
 }
