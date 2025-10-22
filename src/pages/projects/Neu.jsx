@@ -93,24 +93,16 @@ const Neu = () => {
 
                 <ul className="features-list">
                     <li>
-                        <strong>AI Chat:</strong> A personalized chat where users can receive immediate emotional support from an AI that adapts to their 
-                        personality, tone, and current emotional state. The AI offers motivational guidance, grounding techniques, or practical help with 
-                        structure—depending on what the user needs in that moment.
+                        <strong>AI Chat:</strong> A chat-based AI that provides immediate emotional support, adapting its tone and guidance to the user’s needs in real time.
                     </li>
                     <li>
-                        <strong>Voice & Audio Interaction:</strong> Since several interviewees mentioned feeling uncomfortable typing during stressful moments, 
-                        the AI also supports voice interaction. Users can speak directly to the AI or send voice messages instead of typing, allowing for more 
-                        natural communication and accessibility.
+                        <strong>Voice & Audio Interaction:</strong> Users can talk to the AI or send voice messages instead of typing, offering a more natural and accessible experience.
                     </li>
                     <li>
-                        <strong>Check-In:</strong> A daily mood check-in that encourages users to reflect on their emotions. Each check-in includes selecting 
-                        an emoji that represents their mood and answering three short questions about what they’re feeling, what may have caused it, and what 
-                        they’ve done so far during the day. The goal is to build awareness and self-reflection over time.
+                        <strong>Check-In:</strong> A quick daily mood check-in using emojis and three short questions to help users reflect and build emotional awareness.
                     </li>
                     <li>
-                        <strong>Mood Track:</strong> A visual overview where users can track their emotional trends through a color-coded calendar and daily 
-                        summaries. The dashboard includes patterns, statistics, and reflections to help users recognize triggers and discover what supports 
-                        their mental well-being.
+                        <strong>Mood Track:</strong> A color-coded calendar and simple statistics that visualize emotional patterns and help users identify triggers and progress.
                     </li>
                 </ul>
 
@@ -151,7 +143,7 @@ const Neu = () => {
                     <h4>Check-In</h4>
                 </div>
                 <div className="imagesNeu">
-                    <img src="/images/chekinstart.png" alt="check-in start" />
+                  
                     <img src="/images/chekinm.png" alt="check-in mid" />
                     <img src="/images/chekinm1.png" alt="check-in question" />
                     <img src="/images/chekinm2.png" alt="check-in summary" />
@@ -186,3 +178,4 @@ const Neu = () => {
 };
 
 export default Neu;
+
