@@ -205,7 +205,7 @@ const Neu = () => {
             {!isPlaying1 && (
               <div className="custom-play-wrapper">
                 <div className="play-circle" />
-                <div className="play-triangle">▶</div>
+                <div className="play-triangle"></div>
               </div>
             )}
           </div>

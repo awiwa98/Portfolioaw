@@ -160,13 +160,16 @@ h3 {
 }
 
 .play-triangle {
-  position: relative;
-  font-size: 44px;
-  color: white;
+  width: 0;
+  height: 0;
+  border-left: 22px solid white;     /* själva pilen */
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
   opacity: 0.9;
   z-index: 2;
   transition: transform 0.2s ease;
 }
+
 
 .video-container:hover .play-circle {
   transform: scale(1.1);
