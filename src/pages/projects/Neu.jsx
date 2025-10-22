@@ -125,7 +125,7 @@ const Neu = () => {
 
   <div className="visual-identity-images">
     <img src="/images/visuellneu.png" alt="Visual identity" />
-    <img src="/images/komponenterneu.png" alt="Design system" />
+    <img src="/images/designsystemneuu.png" alt="Design system" />
   </div>
 
 
