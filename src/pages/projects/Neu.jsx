@@ -241,12 +241,7 @@ const Neu = () => {
         </div>
       </div>
 
-      <p>
-        A visual identity and design system were also developed to ensure consistency 
-        and accessibility across the interface, but are not included here as the focus 
-        of this case study is on the user experience and core functionality.
-      </p>
-
+   
       <div className="conclusion">
         <h3>Reflection</h3>
         <p>
