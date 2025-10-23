@@ -64,7 +64,7 @@ const Home = () => {
                         <div className="projectImg">
                             <img src="images/signinsignup.png" alt="neu mockup1" />
                              <img src="images/profile1.png" alt="neu mockup2" />
-                             <img src="images/moodtrack2.png" alt="neu mockup3" />
+                             <img src="images/aichat2.png" alt="neu mockup3" />
                         </div>
 
                         <div className="projectBtnWrapper">
